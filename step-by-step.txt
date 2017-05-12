@@ -1,8 +1,8 @@
 1. Susikursime failų struktūrą:
-    server
+    server (direktorija)
         - config.php
         - utilities.php
-    templates
+    templates (direktorija)
         - footer.view.php
         - form.view.php
         - header.view.php
@@ -12,6 +12,32 @@
     index.php
     read.php
     update.php 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 2. Pradėsime darbą su HTML kodu:
     2.1 Apsirašysime <head> dalį templates/header.view.php faile. Įsiterpsime bootstrap stilius (v3.3.7)

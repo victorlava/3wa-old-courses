@@ -42,9 +42,6 @@
                     <div class="img-card">
                         <img src="<?php echo $movie['image_url']; ?>" alt="<?php echo $movie['title']; ?>" class="img-responsive" />
                     </div>
-                    <p class="tagline card-text text-xs-center">
-                        Metai: <?php echo $movie['year'] ?> m., Trukmė: <?php echo formatTime($movie['length']); ?>
-                    </p>
                     <a href="update.php?id=<?php echo $movie['id']?>" class="btn btn-primary btn-block"><i class="glyphicon glyphicon-pencil"></i> Redaguoti</a>
                     <a href="delete.php?id=<?php echo $movie['id']?>" class="btn btn-danger btn-block"><i class="glyphicon glyphicon-trash"></i> Delete</a>
                 </div>

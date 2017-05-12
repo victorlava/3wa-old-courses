@@ -20,7 +20,13 @@
     position: absolute;
     bottom: 30px;
     left: 0;
+    /* font-weight: bold; */
     right: 0;
+    background: #FFF;
+    border-radius: 1em;
+    color: #656565;
+    padding: 10px 0;
+    line-height: 1.4;
 }
 
 .btn-primary {

@@ -4,9 +4,12 @@
 
 <?php 
 
-    $id = $_GET['id']; //update.php?id=4  
-    $movie = getMovie($id);
-    $buttonName = 'Update';
+    $errorMessage = '';
+    if(isset($_GET['id'])){ //Apsauga! Tikriname ar $_GET['id'] egzistuoja (localhost/read.php?id)
+        $id = $_GET['id']; //update.php?id=4  
+        $movie = getMovie($id);
+        $buttonName = 'Update';
+    }
      /*  
     echo "<pre>"; 
     print_R($_POST);

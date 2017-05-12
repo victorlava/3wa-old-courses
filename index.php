@@ -5,7 +5,7 @@
 
     include 'server/utilities.php';
 
-    $limit = 6;
+    $limit = 4;
     $ifSearching = FALSE;
 
     if(count($_GET) == 0) {
@@ -54,9 +54,9 @@
                             <img style="max-height:268px; margin:auto;" src="<?php echo $movie['image_url']; ?>" alt="" class="img-responsive" />
                         </div>
                         <p class="tagline card-text text-xs-center">
-                            Metai: <?php echo $movie['year']; ?> m., Trukmė: : <?php echo formatTime($movie['length']); ?>
+                            Metai: <strong><?php echo $movie['year']; ?> m.</strong>, Trukmė: : <?php echo formatTime($movie['length']); ?>
                         </p>
-                        <a href="read.php?id=<?php echo $movie['id'];?>" class="btn btn-primary btn-icon">
+                        <a href="read.php?id=<?php echo $movie['id'];?>" class="btn btn-warning btn-icon">
                             <i class="fa fa-edit"></i>
                         </a>
                     </div>

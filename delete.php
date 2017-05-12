@@ -8,7 +8,7 @@
 
     $movie = getMovie($id);
 
-    //deleteMovie($id);  
+    deleteMovie($id);  
 
     //header('Location:index.php'); // Veikia be uždelsimo
     header('Refresh:1; url=index.php'); // Veikia su uždelsimu
